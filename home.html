@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center navbar-content">
+
+          
+            <div class="order-1 order-lg-0 d-flex nav-left">
+                <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="#">Course</a>
+                        <a class="nav-link disabled" href="#">Service</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="order-0 order-lg-1 logo-image "></div>
+
+          
+            <div class="order-2 nav-right">
+                <button class="register-btn" data-bs-toggle="modal" data-bs-target="#registerModal">Register
+                    Now</button>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Registration Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" name="myForm" onsubmit="return myFunction1()">
+                        <label for="">Full Name:</label>
+                        <input name="studentName" type="text" placeholder="Enter your full name" style="width: 400px;"><br><br>
+                        <label for="">Email Address:</label>
+                        <input name="studentEmail" type="text" placeholder="Enter your email" style="width: 400px;"><br><br>
+                        <label for="">Contact Number:</label>
+                        <input name="studentNo" type="text" placeholder="Enter your Contact Number" style="width: 400px;"><br><br>
+                        <label for="">Select your Course:</label>
+                        <select name="" id="">
+                            <option value="">Select your Course</option>
+                            <option value="">Web Development</option>
+                            <option value="">Data Science</option>
+                            <option value="">AI and ML</option>
+                        </select><br><br>
+                        <label for="">Preferred Mode of learning</label><br>
+                        <input type="radio" style="margin-right:5px ;" value="online" id="online" name="myradio">Online
+                        <input type="radio" style="margin-left:15px ; margin-right: 5px;" value="offline" id="offline"
+                            name="myradio">Offline
+                        <input type="radio" style="margin-left:15px ; margin-right: 5px;" value="hybrid" id="hybrid"
+                            name="myradio">Hybrid
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="register-success-btn">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000"
+        data-bs-pause="false">
+        <div class="carousel-inner" style="height: 600px;">
+            <div class="carousel-item active">
+                <div class="position-relative">
+                    <img src="doubt.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-overlay d-flex justify-content-center align-items-center">
+                        <div class="text-center text-white">
+                            <h2 class="display-4 fw-bold">Welcome to NextGen Academy</h2>
+                            <p class="lead">Where Learning Meets Excellence</p>
+                            <a href="#" class="btn btn-light mt-3">Explore Courses</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="position-relative">
+                    <img src="hall.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-overlay d-flex justify-content-center align-items-center">
+                        <div class="text-center text-white">
+                            <h2 class="display-4 fw-bold">Smart Classroms Designed For Smarter Learning</h2>
+                            <p class="lead">Experience Education Like Never Before</p>
+                            <a href="#" class="btn btn-light mt-3">Explore Courses</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="position-relative">
+                    <img src="interaction.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-overlay d-flex justify-content-center align-items-center">
+                        <div class="text-center text-white">
+                            <h2 class="display-4 fw-bold">Where Ideas Flow and Friendship Grows</h2>
+                            <p class="lead">A Community That Learns Together</p>
+                            <a href="#" class="btn btn-light mt-3">Explore Courses</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="position-relative">
+                    <img src="doubt clearance.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-overlay d-flex justify-content-center align-items-center">
+                        <div class="text-center text-white">
+                            <h2 class="display-4 fw-bold">No Question Left Unanswered</h2>
+                            <p class="lead">We Are Here To Help You Understand Better</p>
+                            <a href="#" class="btn btn-light mt-3">Explore Courses</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="courses-offered">
+        <h2>Courses Offered</h2>
+    </div>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="programming.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 18px;">Programming & Development</h5>
+                        <p class="card-text"><a href="#" class="courses-overview">Python Programming</a><br>
+                            <a href="#" class="courses-overview">C & C++ Programming</a><br>
+                            <a href="#" class="courses-overview">Web Development</a><br>
+                            <a href="#" class="courses-overview">Android App Development</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="ai.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 18px;">Data & Analytics</h5>
+                        <p class="card-text"><a href="#" class="courses-overview">Data Science With Python</a><br>
+                            <a href="#" class="courses-overview">Artificial Intelligence</a><br>
+                            <a href="#" class="courses-overview">Machine Learning</a><br>
+                            <a href="#" class="courses-overview">Data Structures & Algorithms</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="hacking.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cloud, DevOps & Others</h5>
+                        <p class="card-text"><a href="#" class="courses-overview">AWS Cloud Practitioner</a> <br>
+                            <a href="#" class="courses-overview">DevOps</a><br>
+                            <a href="#" class="courses-overview">Cybersecurity</a><br>
+                            <a href="#" class="courses-overview" v>Linux & Shell Scripting</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Interview.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Placement Training</h5>
+                        <p class="card-text"><a href="#" class="courses-overview">Aptitude & Reasoning</a><br>
+                            <a href="#" class="courses-overview">Resume Building</a><br>
+                            <a href="#" class="courses-overview">Mock Interviews</a><br>
+                            <a href="#" class="courses-overview">Soft Skills & Communication</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="courses-offered">
+        <h2>Faces Of Our Success</h2>
+    </div>
+    <div class="container">
+        <!-- Carousel Container -->
+        <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="container ">
+                        <div class="row">
+                            <!-- Card 1 -->
+                            <div class="col-md-4">
+                                <div class="card custom-card">
+                                    <img src="photo1.jpg" class="card-img-top rounded-circle mx-auto d-block mt-3"
+                                        alt="Student 1" style="width: 150px; height: 150px; object-fit: cover;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Noah Carter</h5>
+                                        <p class="card-text">Placed at Infosys – Python Course</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="col-md-4">
+                                <div class="card custom-card">
+                                    <img src="photo2.jpg" class="card-img-top rounded-circle mx-auto d-block mt-3"
+                                        alt="Student 1" style="width: 150px; height: 150px; object-fit: cover;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ethan Miller</h5>
+                                        <p class="card-text">Web Developer at TCS – Web Dev Course</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="col-md-4">
+                                <div class="card custom-card">
+                                    <img src="photo 3.jpg" class="card-img-top rounded-circle mx-auto d-block mt-3"
+                                        alt="Student 1" style="width: 150px; height: 150px; object-fit: cover;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Emily Rose</h5>
+                                        <p class="card-text">Java Full Stack Developer – Placed at Wipro</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Card 4 -->
+                            <div class="col-md-4">
+                                <div class="card custom-card">
+                                    <img src="photo 4.jpg" class="card-img-top rounded-circle mx-auto d-block mt-3"
+                                        alt="Student 1" style="width: 150px; height: 150px; object-fit: cover;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sophia Carter</h5>
+                                        <p class="card-text">Data Analyst – Placed at Cognizant</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 5 -->
+                            <div class="col-md-4">
+                                <div class="card custom-card">
+                                    <img src="photo 5.jpg" class="card-img-top rounded-circle mx-auto d-block mt-3"
+                                        alt="Student 1" style="width: 150px; height: 150px; object-fit: cover;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Olivia James</h5>
+                                        <p class="card-text">Frontend Developer – Placed at Accenture</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 6 -->
+                            <div class="col-md-4">
+                                <div class="card custom-card">
+                                    <img src="photo 6.jpg" class="card-img-top rounded-circle mx-auto d-block mt-3"
+                                        alt="Student 1" style="width: 150px; height: 150px; object-fit: cover;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Logan Parker</h5>
+                                        <p class="card-text">AWS Cloud Trainee – Capgemini</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+           
+            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+    </div>
+    </div>
+    <div class="banner-image">
+        <div class="banner-text">
+            <h2 style="font-size: 40px;">1200+ Students Trained</h2>
+            <h2 style="font-size: 40px;">800+ Successfully Placed</h2>
+            <h1 style="font-size: 70px;">Start Learning Today</h1>
+            <button class="register-btn">Enroll Now</button>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <style>
+        .logo-image {
+            height: 80px;
+            width: 150px;
+            background-image: url("logo.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .register-btn {
+            background-color: #b30059;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-left,
+            .nav-right {
+                justify-content: center;
+                margin-top: 10px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .logo-image {
+                margin-left: -200px;
+            }
+        }
+
+        .register-btn {
+            height: 50px;
+            width: 200px;
+            border-radius: 25px;
+            background-color: #800000;
+            color: white;
+            margin-right: 25px;
+        }
+
+        .carousel-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Dark transparent overlay */
+        }
+
+        .courses-offered {
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+
+        .courses-overview {
+            text-decoration: none;
+
+        }
+
+        .courses-overview:hover {
+            color: #800000;
+        }
+
+        .success-stories {
+            height: 300px;
+            background-color: #800000;
+        }
+
+        .custom-card {
+            background-color: #800000;
+            color: white;
+        }
+
+        .banner-image {
+            height: 400px;
+            background-image: url("banner.png");
+            background-position: center;
+            background-size: cover;
+            margin-top: 70px;
+            text-align: center;
+
+
+        }
+
+        .banner-text {
+            color: white;
+            padding-top: 90px;
+
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $(document).ready(function () {
+            $("#register-success-btn").click(function () {
+                $('#registerModal').modal('hide');
+                Swal.fire({
+                    title: "Registration Successful!",
+                    text: "Thank you for registering. We will contact you soon.",
+                    icon: "success"
+                });
+            })
+        })
+        function myFunction1(){
+            name=document.myForm.studentName.value
+            email=document.myForm.studentEmail.value
+            number=document.myForm.studentNo.value
+            if (name==""){
+                alert("Please enter your Full Name")
+                return false;
+            }
+            else if (email==""){
+                alert("Please enter your Email")
+            }
+            else if (number==""){
+                alert("Please enter your Contact Number")
+            }
+            else if (number.length!==10){
+                 alert("Please enter valid contact number")
+            }
+        }
+    </script>
+</body>
+
+</html>
